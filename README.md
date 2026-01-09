@@ -1,22 +1,22 @@
-# 🏨 Booking Hotel Web Application
+# Booking Hotel Web Application
 
 A full-stack hotel booking web application built with **Next.js**, **Supabase**, and **NextAuth.js**.  
 This project demonstrates authentication, authorization, and CRUD operations using modern web technologies.
 
 ---
 
-## 🚀 Features
+## Features
 
 - User authentication using **NextAuth.js**
 - Session-based authorization and protected routes
 - Hotel listing and booking management
-- Create, update, and delete bookings (**CRUD**)
+- Create, update, and delete bookings (CRUD)
 - REST API integration for data fetching and mutations
 - Responsive UI with reusable components
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Frontend:** Next.js (App Router), React, JavaScript (ES6+)
 - **Backend:** Next.js API Routes / Server Actions
@@ -27,7 +27,7 @@ This project demonstrates authentication, authorization, and CRUD operations usi
 
 ---
 
-## 🔐 Authentication & Authorization
+## Authentication & Authorization
 
 - Authentication handled via **NextAuth.js**
 - Session management for logged-in users
@@ -36,7 +36,7 @@ This project demonstrates authentication, authorization, and CRUD operations usi
 
 ---
 
-## 🗄 Database
+## Database
 
 - **Supabase PostgreSQL** used for persistent data storage
 - Tables for users, hotels, and bookings
@@ -44,17 +44,17 @@ This project demonstrates authentication, authorization, and CRUD operations usi
 
 ---
 
-## ⚙️ Getting Started
+## Getting Started
 
-### 1️⃣ Clone the repository
+### 1. Clone the repository
 ```bash
 git clone https://github.com/xuankhai1910/booking-hotel-website.git
 cd booking-hotel
 
-###2️⃣ Install dependencies
+### 2. Install dependencies
 npm install
 
-###3️⃣ Environment variables
+### 3. Environment variables
 
 Create a .env.local file in the root directory:
 
@@ -64,26 +64,14 @@ NEXTAUTH_URL=http://localhost:3000
 SUPABASE_URL=your_supabase_url
 SUPABASE_ANON_KEY=your_supabase_anon_key
 
-###4️⃣ Run the development server
+### 4. Run the development server
 npm run dev
 
 
 Open http://localhost:3000 in your browser.
 
-📦 Project Structure
+### 5. Project Structure
 app/            # App Router pages & layouts
 components/     # Reusable UI components
 lib/            # Supabase & authentication utilities
 api/            # API routes / server logic
-
-🎯 Learning Outcomes
-
-Built a real-world full-stack application with Next.js
-
-Implemented authentication and authorization flow
-
-Worked with REST APIs and async data handling
-
-Integrated Supabase as backend and database service
-
-Improved component structure and clean code practices
