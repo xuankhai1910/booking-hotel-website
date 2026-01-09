@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🏨 Booking Hotel Web Application
 
-## Getting Started
+A full-stack hotel booking web application built with **Next.js**, **Supabase**, and **NextAuth.js**.  
+This project demonstrates authentication, authorization, and CRUD operations using modern web technologies.
 
-First, run the development server:
+---
 
+## 🚀 Features
+
+- User authentication using **NextAuth.js**
+- Session-based authorization and protected routes
+- Hotel listing and booking management
+- Create, update, and delete bookings (**CRUD**)
+- REST API integration for data fetching and mutations
+- Responsive UI with reusable components
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** Next.js (App Router), React, JavaScript (ES6+)
+- **Backend:** Next.js API Routes / Server Actions
+- **Authentication:** NextAuth.js
+- **Database:** Supabase (PostgreSQL)
+- **Styling:** CSS / Tailwind CSS
+- **Deployment:** Vercel
+
+---
+
+## 🔐 Authentication & Authorization
+
+- Authentication handled via **NextAuth.js**
+- Session management for logged-in users
+- Protected routes using middleware
+- Authorization logic applied to restrict access to booking features
+
+---
+
+## 🗄 Database
+
+- **Supabase PostgreSQL** used for persistent data storage
+- Tables for users, hotels, and bookings
+- Database operations handled via Supabase client
+
+---
+
+## ⚙️ Getting Started
+
+### 1️⃣ Clone the repository
 ```bash
+git clone https://github.com/xuankhai1910/booking-hotel-website.git
+cd booking-hotel
+
+###2️⃣ Install dependencies
+npm install
+
+###3️⃣ Environment variables
+
+Create a .env.local file in the root directory:
+
+NEXTAUTH_SECRET=your_nextauth_secret
+NEXTAUTH_URL=http://localhost:3000
+
+SUPABASE_URL=your_supabase_url
+SUPABASE_ANON_KEY=your_supabase_anon_key
+
+###4️⃣ Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Open http://localhost:3000 in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+📦 Project Structure
+app/            # App Router pages & layouts
+components/     # Reusable UI components
+lib/            # Supabase & authentication utilities
+api/            # API routes / server logic
 
-## Learn More
+🎯 Learning Outcomes
 
-To learn more about Next.js, take a look at the following resources:
+Built a real-world full-stack application with Next.js
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Implemented authentication and authorization flow
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Worked with REST APIs and async data handling
 
-## Deploy on Vercel
+Integrated Supabase as backend and database service
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Improved component structure and clean code practices
